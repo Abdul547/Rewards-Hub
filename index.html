@@ -59,7 +59,6 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      text-decoration: none;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
     }
@@ -106,6 +105,22 @@
   </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- ============================= -->
+  <!-- NEW SINGINGFILES LOCKER CODE -->
+  <!-- ============================= -->
+  <script type="text/javascript">var lck = false;</script>
+  <script type="text/javascript" src="https://singingfiles.com/script_include.php?id=1873410"></script>
+  <script type="text/javascript">
+    if(!lck){
+      top.location = 'https://singingfiles.com/help/ablk.php?lkt=1';
+    }
+  </script>
+  <noscript>
+    Please enable JavaScript to access this page.
+    <meta http-equiv="refresh" content="0;url=https://singingfiles.com/help/enable_javascript.php?lkt=1" />
+  </noscript>
+
 </head>
 
 <body>
@@ -116,8 +131,7 @@
     <h1><i class="fas fa-gift"></i> Exclusive USA Rewards Program</h1>
     <p class="tagline">Complete one quick step to unlock your reward</p>
 
-    <!-- CTA now triggers locker -->
-    <button class="cta-button" onclick="openLocker()">
+    <button class="cta-button">
       <i class="fas fa-rocket"></i> Claim Your Free Reward Now
     </button>
 
@@ -125,7 +139,6 @@
       USA Android users only • Limited time
     </p>
   </header>
-
 
   <!-- CONTENT -->
   <div class="content-grid">
@@ -144,8 +157,7 @@
       <div class="tip">✔ Instant access</div>
 
       <div style="text-align:center;margin-top:25px;">
-        <!-- SECOND CTA -->
-        <button class="cta-button" style="padding:15px 30px;font-size:16px;" onclick="openLocker()">
+        <button class="cta-button" style="padding:15px 30px;font-size:16px;">
           Access Premium Rewards
         </button>
       </div>
@@ -153,33 +165,10 @@
 
   </div>
 
-
   <footer>
     © 2024 Free USA Rewards | USA Residents Only
   </footer>
 
 </div>
-
-
-<!-- ============================= -->
-<!-- SINGINGFILES CONTENT LOCKER -->
-<!-- ============================= -->
-<script type="text/javascript">
-  function openLocker() {
-
-    var lck = false;
-
-    var script = document.createElement("script");
-    script.src = "https://singingfiles.com/1873403";
-    document.body.appendChild(script);
-
-    setTimeout(function () {
-      if (!lck) {
-        top.location = "https://singingfiles.com/1873403";
-      }
-    }, 1500);
-  }
-</script>
-
 </body>
 </html>
